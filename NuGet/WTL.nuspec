@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>wtl</id>
+        <version>9.1.1</version>
+        <title>Windows Template Library</title>
+        <authors>Tsuda Kageyu,WTL Team</authors>
+        <owners>Microsoft,WTL Team</owners>
+        <licenseUrl>http://opensource.org/licenses/cpl1.0.php</licenseUrl>
+        <projectUrl>https://sourceforge.net/projects/wtl/</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Windows Template Library (WTL) is a C++ library for developing Windows applications and UI components. It extends ATL (Active Template Library) and provides a set of classes for controls, dialogs, frame windows, GDI objects, and more.</description>
+        <summary>This package contains the header files for Windows Template Library.</summary>
+        <releaseNotes>This release is based on WTL 9.1.5321 Final.</releaseNotes>
+        <copyright>Copyright © 2015 Microsoft Corporation, WTL Team. All rights reserved.</copyright>
+        <language>es-US</language>
+        <tags>C++ Native Win32 GUI Window Microsoft</tags>
+    </metadata>
+    <files>
+        <file src="build\native\wtl.targets" target="build\native\wtl.targets" />
+        <file src="..\Include\atlapp.h" target="lib\native\include\atlapp.h" />
+        <file src="..\Include\atlcrack.h" target="lib\native\include\atlcrack.h" />
+        <file src="..\Include\atlctrls.h" target="lib\native\include\atlctrls.h" />
+        <file src="..\Include\atlctrlw.h" target="lib\native\include\atlctrlw.h" />
+        <file src="..\Include\atlctrlx.h" target="lib\native\include\atlctrlx.h" />
+        <file src="..\Include\atlddx.h" target="lib\native\include\atlddx.h" />
+        <file src="..\Include\atldlgs.h" target="lib\native\include\atldlgs.h" />
+        <file src="..\Include\atldwm.h" target="lib\native\include\atldwm.h" />
+        <file src="..\Include\atlfind.h" target="lib\native\include\atlfind.h" />
+        <file src="..\Include\atlframe.h" target="lib\native\include\atlframe.h" />
+        <file src="..\Include\atlgdi.h" target="lib\native\include\atlgdi.h" />
+        <file src="..\Include\atlmisc.h" target="lib\native\include\atlmisc.h" />
+        <file src="..\Include\atlprint.h" target="lib\native\include\atlprint.h" />
+        <file src="..\Include\atlres.h" target="lib\native\include\atlres.h" />
+        <file src="..\Include\atlresce.h" target="lib\native\include\atlresce.h" />
+        <file src="..\Include\atlribbon.h" target="lib\native\include\atlribbon.h" />
+        <file src="..\Include\atlscrl.h" target="lib\native\include\atlscrl.h" />
+        <file src="..\Include\atlsplit.h" target="lib\native\include\atlsplit.h" />
+        <file src="..\Include\atltheme.h" target="lib\native\include\atltheme.h" />
+        <file src="..\Include\atluser.h" target="lib\native\include\atluser.h" />
+        <file src="..\Include\atlwince.h" target="lib\native\include\atlwince.h" />
+        <file src="..\Include\atlwinx.h" target="lib\native\include\atlwinx.h" />
+        <file src="..\Wizards\AppWiz\Files\1033\styles.css" target="tools\AppWiz\Files\1033\styles.css" />
+        <file src="..\Wizards\AppWiz\Files\HTML\1033\AppType.htm" target="tools\AppWiz\Files\HTML\1033\AppType.htm" />
+        <file src="..\Wizards\AppWiz\Files\HTML\1033\default.htm" target="tools\AppWiz\Files\HTML\1033\default.htm" />
+        <file src="..\Wizards\AppWiz\Files\HTML\1033\UIFeatures.htm" target="tools\AppWiz\Files\HTML\1033\UIFeatures.htm" />
+        <file src="..\Wizards\AppWiz\Files\Images\WTLApp70.gif" target="tools\AppWiz\Files\Images\WTLApp70.gif" />
+        <file src="..\Wizards\AppWiz\Files\Images\WTLApp70_Background.gif" target="tools\AppWiz\Files\Images\WTLApp70_Background.gif" />
+        <file src="..\Wizards\AppWiz\Files\Scripts\1033\default.js" target="tools\AppWiz\Files\Scripts\1033\default.js" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\AboutDlg.cpp" target="tools\AppWiz\Files\Templates\1033\AboutDlg.cpp" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\AboutDlg.h" target="tools\AppWiz\Files\Templates\1033\AboutDlg.h" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\ChildFrm.cpp" target="tools\AppWiz\Files\Templates\1033\ChildFrm.cpp" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\ChildFrm.h" target="tools\AppWiz\Files\Templates\1033\ChildFrm.h" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\Frame.cpp" target="tools\AppWiz\Files\Templates\1033\Frame.cpp" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\Frame.h" target="tools\AppWiz\Files\Templates\1033\Frame.h" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\MainDlg.cpp" target="tools\AppWiz\Files\Templates\1033\MainDlg.cpp" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\MainDlg.h" target="tools\AppWiz\Files\Templates\1033\MainDlg.h" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\ReadMe.txt" target="tools\AppWiz\Files\Templates\1033\ReadMe.txt" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\resource.h" target="tools\AppWiz\Files\Templates\1033\resource.h" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\Ribbon.h" target="tools\AppWiz\Files\Templates\1033\Ribbon.h" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\Ribbon.xml" target="tools\AppWiz\Files\Templates\1033\Ribbon.xml" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\root.cpp" target="tools\AppWiz\Files\Templates\1033\root.cpp" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\root.exe.manifest" target="tools\AppWiz\Files\Templates\1033\root.exe.manifest" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\root.h" target="tools\AppWiz\Files\Templates\1033\root.h" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\root.ico" target="tools\AppWiz\Files\Templates\1033\root.ico" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\root.idl" target="tools\AppWiz\Files\Templates\1033\root.idl" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\root.rc" target="tools\AppWiz\Files\Templates\1033\root.rc" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\root.rgs" target="tools\AppWiz\Files\Templates\1033\root.rgs" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\rootDoc.ico" target="tools\AppWiz\Files\Templates\1033\rootDoc.ico" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\rootidl.h" target="tools\AppWiz\Files\Templates\1033\rootidl.h" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\rootps.def" target="tools\AppWiz\Files\Templates\1033\rootps.def" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\rootps.mk" target="tools\AppWiz\Files\Templates\1033\rootps.mk" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\stdafx.cpp" target="tools\AppWiz\Files\Templates\1033\stdafx.cpp" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\stdafx.h" target="tools\AppWiz\Files\Templates\1033\stdafx.h" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\Templates.inf" target="tools\AppWiz\Files\Templates\1033\Templates.inf" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\toolbar.bmp" target="tools\AppWiz\Files\Templates\1033\toolbar.bmp" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\View.cpp" target="tools\AppWiz\Files\Templates\1033\View.cpp" />
+        <file src="..\Wizards\AppWiz\Files\Templates\1033\View.h" target="tools\AppWiz\Files\Templates\1033\View.h" />
+        <file src="..\Wizards\AppWiz\Files\WTLAppWiz.ico" target="tools\AppWiz\Files\WTLAppWiz.ico" />
+        <file src="..\Wizards\AppWiz\Files\WTLAppWiz.vsdir" target="tools\AppWiz\Files\WTLAppWiz.vsdir" />
+        <file src="..\Wizards\AppWiz\Files\WTLAppWiz.vsz" target="tools\AppWiz\Files\WTLAppWiz.vsz" />
+        <file src="..\Wizards\AppWiz\Setup.js" target="tools\AppWiz\Setup.js" />
+        <file src="tools\install.ps1" target="tools\install.ps1" />
+    </files>
+</package>
