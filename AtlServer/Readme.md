@@ -43,7 +43,7 @@ The source code to the following tools will also become part of the shared sourc
 
 ### Interested in contributing?
 
-You may join the project by following steps describe here [JoinProject](JoinProject).
+You may join the project by following steps describe here [JoinProject](JoinProject.md).
 
 ### Plans for future releases
 
