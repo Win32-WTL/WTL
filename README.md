@@ -1,17 +1,17 @@
 # Windows Template Library
 This is a mirror of Windows Template Library (WTL).
 
-**Official Repository**
+## Official Sites 
 
-The official repository: [SourceForge:WTL](https://sourceforge.net/projects/wtl/)
+The official repository: [SourceForge: WTL](https://sourceforge.net/projects/wtl/)
 
-The official website: [WTL](https://wtl.sourceforge.io)
+The official or project website: [WTL](https://wtl.sourceforge.io)
 
-**Nuget Package**
+## Nuget Package
 
 The Nuget package: [Latest](https://www.nuget.org/packages/wtl/)
 
-**Introduction**
+## Introduction
 
 WTL is a set of classes that extend ATL to support more complex user interfaces for either applications or various UI components, while maintaining the big advantage of ATL - small and fast code. WTL classes were designed to be the best and the easiest way to implement rich Win32 based UI for ATL based applications, servers, components, and controls.
 
@@ -32,7 +32,10 @@ The WTL classes are mostly templated and use minimal instance data and inline fu
 
 In summary, WTL delivers very small and efficient code, very close in size and speed to SDK programs, while presenting a more logical, object oriented model to a programmer.
 
-**License**
+## Related Resources and Sites
+Under construction!!!
+
+## License
 
 The sources of WTL are under the [MS-PL](https://opensource.org/licenses/MS-PL) (or Microsoft Public License).
 
