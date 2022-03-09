@@ -35,12 +35,12 @@ END
 2 TEXTINCLUDE 
 BEGIN
     "#include ""atlres.h""\r\n"
-    "#include ""MTPadRibbon.h\0"
+    "#include ""MTPadRibbon.h""\0"
 END
 
 3 TEXTINCLUDE 
 BEGIN
-    "#include ""MTPadRibbon.rc\0"
+    "#include ""MTPadRibbon.rc""\0"
 END
 
 #endif    // APSTUDIO_INVOKED
@@ -57,7 +57,7 @@ CAPTION "About MTPad"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,130,81,50,14
-    CTEXT           "MTPad v7.0\nRibbon enabled\nMultithreaded Notepad Sample\n©  2010",IDC_STATIC,13,51,104,38
+    CTEXT           "MTPad v7.0\nRibbon enabled\nMultithreaded Notepad Sample\nÂ©  2010",IDC_STATIC,13,51,104,38
     ICON            IDR_MAINFRAME,IDC_STATIC,55,26,20,20
     GROUPBOX        "",IDC_STATIC,7,7,115,88
 END
@@ -271,7 +271,7 @@ BEGIN
             VALUE "FileDescription", "MTPad7 WTL Application"
             VALUE "FileVersion", "7, 0, 0, 1"
             VALUE "InternalName", "MTPad7"
-            VALUE "LegalCopyright", "Copyright © Microsoft 1998-2010"
+            VALUE "LegalCopyright", "Copyright Â© Microsoft 1998-2010"
             VALUE "OriginalFilename", "MTPad.EXE"
             VALUE "ProductName", "MTPad7 Application"
             VALUE "ProductVersion", "7, 0, 0, 1"
