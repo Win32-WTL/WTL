@@ -355,6 +355,16 @@ function AddConfigurations(proj, strProjectName)
 				strDefines += "_DEBUG";
 			else
 				strDefines += "NDEBUG";
+
+			// If INCLUDE_PATH is defined (set during Setup.js for non-/copyfiles installs),
+			// use it to set the additional include directory for the C/C++ compiler.
+			// This ensures the WTL Include folder is available without requiring manual configuration.
+			if (wizard.FindSymbol("INCLUDE_PATH"))
+			{	
+			 var strTemplatePath = wizard.FindSymbol('INCLUDE_PATH');
+			 CLTool.AdditionalIncludeDirectories = strTemplatePath;
+			}
+	
 			CLTool.PreprocessorDefinitions = strDefines;
 
 			// Linker settings
@@ -378,7 +388,19 @@ function AddConfigurations(proj, strProjectName)
 			// Resource settings
 			var RCTool = config.Tools("VCResourceCompilerTool");
 			RCTool.Culture = rcEnglishUS;
-			RCTool.AdditionalIncludeDirectories = "$(IntDir)";
+			// Set additional include directories for the resource compiler.
+			// If INCLUDE_PATH is defined, use it along with $(IntDir).
+			// Otherwise, fall back to using only $(IntDir).
+			if (wizard.FindSymbol("INCLUDE_PATH"))
+			{
+			   var strTemplatePath = wizard.FindSymbol('INCLUDE_PATH');
+			  RCTool.AdditionalIncludeDirectories = "$(IntDir);" + strTemplatePath;
+			}
+			else
+			{
+			   RCTool.AdditionalIncludeDirectories = "$(IntDir)";
+			}
+			
 			if(bDebug)
 				RCTool.PreprocessorDefinitions = "_DEBUG";
 			else
