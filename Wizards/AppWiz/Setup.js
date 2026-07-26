@@ -77,6 +77,12 @@ function main()
 		return;
 	}
 
+	
+	// Get the WTL root folder (i.e., grandparent of strSourceFolder)
+	// This is used to set the INCLUDE_PATH for new WTL projects
+	var preFolder = FileSys.GetParentFolderName(strSourceFolder); // e.g., ...\WTL\Wizards
+	preFolder = FileSys.GetParentFolderName(preFolder);           // e.g., ...\WTL
+	
 	if(!strVersion) 
 		MessageBox(WSShell, "Setup will search for installed versions of Visual Studio,\nand ask to add the WTL App Wizard for each of them.");
 	
@@ -338,6 +344,14 @@ function SetupWizard(WSShell, FileSys, strSourceFolder, strDestFolder, strDataDe
 			fileDest.WriteLine(strLine);
 		}
 
+		// Set INCLUDE_PATH only if this is a normal install (i.e., /copyfiles was not used).
+		// This sets the INCLUDE_PATH in the WTL10AppWiz.vsz file to point to the shared WTL Include folder.
+		// This ensures that when a new project is created using the wizard, the additional include directories are pre-configured.
+		// This behavior is intended for developer convenience and simplifies setup in open-source and merge request environments.
+		// Note: The INCLUDE_PATH is not set when /copyfiles is used (by design).
+		if(strDataDestFolder == "")
+			strLine = "Param=\"INCLUDE_PATH = " + preFolder + "\\Include";
+
 		if(bExpress)
 			fileDest.WriteLine("Param=\"VC_EXPRESS = 1\"");
 
@@ -393,7 +407,7 @@ function SetupWizard(WSShell, FileSys, strSourceFolder, strDestFolder, strDataDe
 			WScript.Echo("ERROR: Cannot open destination file" + strDest);
 			return;
 		}
-
+		
 		while(!fileSrc.AtEndOfStream)
 		{
 			var strLine = fileSrc.ReadLine();
